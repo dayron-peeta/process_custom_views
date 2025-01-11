@@ -2,14 +2,16 @@
     <record id="process_demo_1" model="process.model">
         <field name="name">Proceso 1</field>
         <field name="type_of_process" ref="process_type_1"/>
+        <field name="specific_field_1">val 1</field>
     </record>
     <record id="process_demo_2" model="process.model">
         <field name="name">Proceso 2</field>
         <field name="type_of_process" ref="process_type_2"/>
+        <field name="specific_field_2">val 2</field>
     </record>
     <record id="process_demo_3" model="process.model">
         <field name="name">Proceso 3</field>
         <field name="type_of_process" ref="process_type_3"/>
+        <field name="specific_field_3">val 3</field>
     </record>
 </odoo>
-

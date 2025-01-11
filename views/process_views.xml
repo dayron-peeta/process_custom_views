@@ -1,29 +1,45 @@
 <odoo>
+    <!-- vista kanban de tipos de procesos -->
     <record id="view_process_kanban" model="ir.ui.view">
-    <field name="name">process.kanban</field>
-    <field name="model">process.type</field>
-    <field name="arch" type="xml">
-        <kanban class="oe_background_grey o_kanban_dashboard" action="open_action_view_process" type="object">
-            <field name="id"/>
-            <field name="name"/>
-            <templates>
-                <t t-name="kanban-box">
-                    <div class="oe_kanban_global_click o_has_icon oe_kanban_content oe_kanban_card">
-                        <div class="o_kanban_card_content mw-100">
-                            <div class="o_kanban_primary_left">
-                                <div class="o_primary">
-                                    <span class="o_text_overflow" t-att-title="record.name.value">
-                                        <t t-esc="record.name.value"/>
-                                    </span>
+        <field name="name">process.kanban</field>
+        <field name="model">process.type</field>
+        <field name="arch" type="xml">
+            <kanban class="oe_background_grey o_kanban_dashboard"
+                action="open_filtered_process_list"
+                type="object">
+                <field name="id" />
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                            class="oe_kanban_global_click o_has_icon oe_kanban_content oe_kanban_card">
+                            <div class="o_kanban_card_content mw-100">
+                                <div class="o_kanban_primary_left">
+                                    <div class="o_primary">
+                                        <span class="o_text_overflow"
+                                            t-att-title="record.name.value">
+                                            <t t-esc="record.name.value" />
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </t>
-            </templates>
-        </kanban>
-    </field>
-</record>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- vista lista de tipos de procesos (filtrado por tipo de proceso) -->
+    <record id="view_process_list" model="ir.ui.view">
+        <field name="name">process.list</field>
+        <field name="model">process.model</field>
+        <field name="arch" type="xml">
+            <tree string="Processes" action="open_specific_view" type="object">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
 
 
     <record id="action_process_kanban" model="ir.actions.act_window">
@@ -32,5 +48,5 @@
         <field name="view_mode">kanban</field>
     </record>
 
-    
+
 </odoo>

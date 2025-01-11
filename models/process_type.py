@@ -11,11 +11,11 @@ class ProcessType(models.Model):
         domain="[('name', 'ilike', 'process.form.type.')]"
     )
 
-    def open_action_view_process(self):
+    def open_filtered_process_list(self):
         """Método para abrir la vista filtrada de procesos"""
         return {
             'type': 'ir.actions.act_window',
-            'name': 'Procesos List',
+            'name': f'{self.name}',
             'res_model': 'process.model',
             'view_mode': 'tree,form',
             'domain': [('type_of_process', '=', self.id)],

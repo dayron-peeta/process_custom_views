@@ -1,4 +1,5 @@
 <odoo>
+<!-- Vistas del submenú de Tipos de Procesos -->
     <record id="view_process_type_list" model="ir.ui.view">
         <field name="name">process.type.list</field>
         <field name="model">process.type</field>
