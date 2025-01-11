@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_process_kanban" model="ir.ui.view">
+    <field name="name">process.kanban</field>
+    <field name="model">process.type</field>
+    <field name="arch" type="xml">
+        <kanban class="oe_background_grey o_kanban_dashboard" action="open_action_view_process" type="object">
+            <field name="id"/>
+            <field name="name"/>
+            <templates>
+                <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click o_has_icon oe_kanban_content oe_kanban_card">
+                        <div class="o_kanban_card_content mw-100">
+                            <div class="o_kanban_primary_left">
+                                <div class="o_primary">
+                                    <span class="o_text_overflow" t-att-title="record.name.value">
+                                        <t t-esc="record.name.value"/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+    </field>
+</record>
+
+
+    <record id="action_process_kanban" model="ir.actions.act_window">
+        <field name="name">Procesos</field>
+        <field name="res_model">process.type</field>
+        <field name="view_mode">kanban</field>
+    </record>
+
+    <!-- <record id="action_open_process_list" model="ir.actions.act_window">
+        <field name="name">Procesos List</field>
+        <field name="res_model">process.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'default_type_of_process': active_id}</field>
+        <field name="domain">[('type_of_process', '=', active_id)]</field>
+    </record> -->
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+    <record id="process_demo_1" model="process.model">
+        <field name="name">Proceso 1</field>
+        <field name="type_of_process" ref="process_type_1"/>
+    </record>
+    <record id="process_demo_2" model="process.model">
+        <field name="name">Proceso 2</field>
+        <field name="type_of_process" ref="process_type_2"/>
+    </record>
+    <record id="process_demo_3" model="process.model">
+        <field name="name">Proceso 3</field>
+        <field name="type_of_process" ref="process_type_3"/>
+    </record>
+</odoo>
