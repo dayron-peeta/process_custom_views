@@ -32,11 +32,5 @@
         <field name="view_mode">kanban</field>
     </record>
 
-    <!-- <record id="action_open_process_list" model="ir.actions.act_window">
-        <field name="name">Procesos List</field>
-        <field name="res_model">process.model</field>
-        <field name="view_mode">tree,form</field>
-        <field name="context">{'default_type_of_process': active_id}</field>
-        <field name="domain">[('type_of_process', '=', active_id)]</field>
-    </record> -->
+    
 </odoo>

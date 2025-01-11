@@ -12,3 +12,4 @@
         <field name="type_of_process" ref="process_type_3"/>
     </record>
 </odoo>
+

@@ -14,6 +14,7 @@
     'data': [
         'security/ir.model.access.csv',
         'data/process_type_data.xml',
+        'views/process_specifics_views.xml',
         'views/process_type_views.xml',
         'views/process_views.xml',
         'views/process_menu.xml',

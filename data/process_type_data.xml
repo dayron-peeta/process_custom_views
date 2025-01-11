@@ -1,11 +1,14 @@
 <odoo>
     <record id="process_type_1" model="process.type">
         <field name="name">Tipo 1</field>
+        <field name="view_id" ref="view_process_form_type_1"/>
     </record>
     <record id="process_type_2" model="process.type">
         <field name="name">Tipo 2</field>
+        <field name="view_id" ref="view_process_form_type_2"/>
     </record>
     <record id="process_type_3" model="process.type">
         <field name="name">Tipo 3</field>
+        <field name="view_id" ref="view_process_form_type_3"/>
     </record>
 </odoo>

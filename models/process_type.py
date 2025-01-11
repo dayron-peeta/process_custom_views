@@ -5,7 +5,11 @@ class ProcessType(models.Model):
     _description = 'Process Type'
 
     name = fields.Char(string='Type Name', required=True)
-    view_id = fields.Many2one('ir.ui.view', string='Specific View')
+    view_id = fields.Many2one(
+        'ir.ui.view', 
+        string='Specific View', 
+        domain="[('name', 'ilike', 'process.form.type.')]"
+    )
 
     def open_action_view_process(self):
         """Método para abrir la vista filtrada de procesos"""
