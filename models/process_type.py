@@ -8,7 +8,8 @@ class ProcessType(models.Model):
     view_id = fields.Many2one(
         'ir.ui.view', 
         string='Specific View', 
-        domain="[('name', 'ilike', 'process.form.type.')]"
+        domain="[('name', 'ilike', 'process.form.')]",
+        default=lambda self: self.env.ref('process_custom_views.view_process_form_base', raise_if_not_found=False)
     )
 
     def open_filtered_process_list(self):
