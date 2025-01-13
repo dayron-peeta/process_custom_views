@@ -4,3 +4,4 @@
     <menuitem id="menu_process_types" name="Tipos de Procesos" parent="menu_process_management" action="action_process_types"/>
 </odoo>
 <!-- test -->
+<!-- test 2 -->
