@@ -4,7 +4,7 @@
         <field name="name">process.kanban</field>
         <field name="model">process.type</field>
         <field name="arch" type="xml">
-            <kanban create="true" class="oe_background_grey o_kanban_dashboard"
+            <kanban create="false" class="oe_background_grey o_kanban_dashboard"
                 action="open_filtered_process_list"
                 type="object">
                 <field name="id" />
