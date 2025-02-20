@@ -101,4 +101,6 @@ def open_filtered_process_list(self):
         },
     }
 ```
+
+Se  puede definir **create="false"** dentro de la etiqueta del tipo de vista para q no se muestre el botón **NUEVO**
    
