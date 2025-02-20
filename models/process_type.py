@@ -20,4 +20,8 @@ class ProcessType(models.Model):
             'res_model': 'process.model',
             'view_mode': 'tree,form',
             'domain': [('type_of_process', '=', self.id)],
+            'context': {
+            'default_type_of_process': self.id,  # Carga el tipo de proceso automáticamente
+            'form_view_ref': self.view_id.xml_id,   # Usa la vista específica del tipo de proceso
+            },
         }

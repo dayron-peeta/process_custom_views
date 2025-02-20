@@ -4,7 +4,7 @@
         <field name="name">process.kanban</field>
         <field name="model">process.type</field>
         <field name="arch" type="xml">
-            <kanban class="oe_background_grey o_kanban_dashboard"
+            <kanban create="true" class="oe_background_grey o_kanban_dashboard"
                 action="open_filtered_process_list"
                 type="object">
                 <field name="id" />
@@ -45,7 +45,7 @@
     <record id="action_process_kanban" model="ir.actions.act_window">
         <field name="name">Procesos</field>
         <field name="res_model">process.type</field>
-        <field name="view_mode">kanban</field>
+        <field name="view_mode">kanban,tree,form</field>
     </record>
 
 
