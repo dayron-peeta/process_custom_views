@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<!-- VIEW PROCESS FORM BASE -->
-<record id="view_process_form_base" model="ir.ui.view">
-    <field name="name">process.form.base</field>
-    <field name="model">process.model</field>
-    <field name="arch" type="xml">
-        <form>
-            <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="type_of_process"/>
-                </group>
-            </sheet>
-        </form>
-    </field>
-</record>
+    <!-- VIEW PROCESS FORM BASE -->
+    <record id="view_process_form_base" model="ir.ui.view">
+        <field name="name">process.form.base</field>
+        <field name="model">process.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="type_of_process" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
-<!-- the specific views for each process should be named process.form.type.x to can be used in the process type model -->
+    <!-- the specific views for each process should be named process.form.type.x to can be used in
+    the process type model -->
 
-<!-- VIEW PROCESS FORM TYPE_1 -->
-<record id="view_process_form_type_1" model="ir.ui.view">
-    <field name="name">process.form.type.1</field>
-    <field name="model">process.model</field>
-    <field name="arch" type="xml">
-        <form>
-            <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="type_of_process"/>
-                    <field name="specific_field_1"/>
-                </group>
-            </sheet>
-        </form>
-    </field>
-</record>
+    <!-- VIEW PROCESS FORM TYPE_1 -->
+    <record id="view_process_form_type_1" model="ir.ui.view">
+        <field name="name">process.form.type.1</field>
+        <field name="model">process.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="type_of_process" />
+                        <field name="specific_field_1" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
-<!-- VIEW PROCESS FORM TYPE_1 -->
-<record id="view_process_form_type_2" model="ir.ui.view">
-    <field name="name">process.form.type.2</field>
-    <field name="model">process.model</field>
-    <field name="arch" type="xml">
-        <form>
-            <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="type_of_process"/>
-                    <field name="specific_field_2"/>
-                </group>
-            </sheet>
-        </form>
-    </field>
-</record>
+    <!-- VIEW PROCESS FORM TYPE_2 -->
+    <record id="view_process_form_type_2" model="ir.ui.view">
+        <field name="name">process.form.type.2</field>
+        <field name="model">process.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="type_of_process" />
+                        <field name="specific_field_2" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
-<!-- VIEW PROCESS FORM TYPE_1 -->
-<record id="view_process_form_type_3" model="ir.ui.view">
-    <field name="name">process.form.type.3</field>
-    <field name="model">process.model</field>
-    <field name="arch" type="xml">
-        <form>
-            <sheet>
-                <group>
-                    <field name="name"/>
-                    <field name="type_of_process"/>
-                    <field name="specific_field_3"/>
-                </group>
-            </sheet>
-        </form>
-    </field>
-</record>
+    <!-- VIEW PROCESS FORM TYPE_3 -->
+    <record id="view_process_form_type_3" model="ir.ui.view">
+        <field name="name">process.form.type.3</field>
+        <field name="model">process.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="type_of_process" />
+                        <field name="specific_field_3" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
-    
 
 </odoo>

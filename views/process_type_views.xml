@@ -1,12 +1,12 @@
 <odoo>
-<!-- Vistas del submenú de Tipos de Procesos -->
+    <!-- Vistas del submenú de Tipos de Procesos -->
     <record id="view_process_type_list" model="ir.ui.view">
         <field name="name">process.type.list</field>
         <field name="model">process.type</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name"/>
-                <field name="view_id"/>
+                <field name="name" />
+                <field name="view_id" />
             </tree>
         </field>
     </record>
@@ -17,8 +17,10 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                    <field name="name"/>
-                    <field name="view_id"/>
+                    <group>
+                        <field name="name" />
+                        <field name="view_id" />
+                    </group>
                 </sheet>
             </form>
         </field>
